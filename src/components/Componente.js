@@ -14,15 +14,22 @@ import React, { Component } from "react";
 // }
 
 // componente creado con Function declarada
-function Componente(props) {
-  return (
-    <div>
-      <h2>Hello I'm a Componente Funcional</h2>
-      <p>{props.msg}</p>
+// function Componente(props) {
+//   return (
+//     <div>
+//       <h2>Hello I'm a Componente Funcional</h2>
+//       <p>{props.msg}</p>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
+// componente creado con una Funcion Expresada
+const Componente = (props) => {
+  return <div>
+    <h2>Hello I'm a Componente from a arrow Function</h2>
+    <p>{props.msg}</p>
 
+  </div>
+};
 export default Componente;
