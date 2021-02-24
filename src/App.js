@@ -1,5 +1,8 @@
+// import react ya no es necesario apartir de la version 17
+import react from 'react';
 import logo from "./logo.svg";
 import "./App.css";
+import Componente from "./components/Componente";
 
 function App() {
   let nombre="VContreras";
@@ -26,6 +29,9 @@ function App() {
           Aprende React
         </a>
       </header>
+      <section>
+        <Componente msg="hola soy un Parrafo desde una prop"></Componente>
+      </section>
     </div>
   );
 }
