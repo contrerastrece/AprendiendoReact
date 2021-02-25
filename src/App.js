@@ -3,6 +3,7 @@ import react from 'react';
 import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./components/Componente";
+import Propiedades from "./components/Propiedades";
 
 function App() {
   let nombre="VContreras";
@@ -29,8 +30,22 @@ function App() {
           Aprende React
         </a>
       </header>
+      <hr></hr>
       <section>
-        <Componente msg="hola soy un Parrafo desde una prop"></Componente>
+        <Componente msg="hola soy un Componente en una Función expresada desde una prop"></Componente>
+      </section>
+      <hr></hr>
+      <section>
+        <Propiedades
+          cadena="Esto es una cadena de texto"
+          numero={28}
+          booleano={true}
+          arreglo={[1,2,3,4]}
+          objeto={{nombre:"victor",apellido:"contreras"}}
+          funcion={(num)=>num*num}
+          elementoReact={<i>This is a ElementoReact</i>}
+          componenteReact={<Componente msg="Un componente desde una prop"></Componente>}
+        />
       </section>
     </div>
   );

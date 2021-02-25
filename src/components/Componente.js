@@ -27,8 +27,8 @@ import React, { Component } from "react";
 // componente creado con una Funcion Expresada
 const Componente = (props) => {
   return <div>
-    <h2>Hello I'm a Componente from a arrow Function</h2>
-    <p>{props.msg}</p>
+    <h2> {props.msg} </h2>
+    {/* <p>{props.msg}</p> */}
 
   </div>
 };
