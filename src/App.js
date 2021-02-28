@@ -4,6 +4,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
+import Estado from "./components/Estado";
 
 function App() {
   let nombre="VContreras";
@@ -47,6 +48,8 @@ function App() {
           componenteReact={<Componente msg="Un componente desde una prop"></Componente>}
         />
       </section>
+      <hr></hr>
+      <Estado></Estado>
     </div>
   );
 }
