@@ -5,6 +5,7 @@ import "./App.css";
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
 import Estado from "./components/Estado";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
 
 function App() {
   let nombre="VContreras";
@@ -50,6 +51,8 @@ function App() {
       </section>
       <hr></hr>
       <Estado></Estado>
+      <hr></hr>
+      <RenderizadoCondicional></RenderizadoCondicional>
     </div>
   );
 }
