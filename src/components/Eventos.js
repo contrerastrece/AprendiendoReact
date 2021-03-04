@@ -71,3 +71,44 @@ export class EventosES7 extends Component {
     )
   }
 }
+
+
+/*
+function Boton(props){
+  return(
+    <button onClick={props.myOnClick}>Boton hecho en un componente</button>
+  )
+}
+*/
+
+// arrow function
+/*
+const Boton=(props)=>(<button onClick={props.myOnClick}>Boton hecho en un componente</button>);
+*/
+
+// destructuracion
+const Boton=({myOnClick})=>(<button onClick={myOnClick}>Boton hecho en un componente</button>)
+
+export class MasSobreEventos extends Component {
+  handleClick=(e,message)=>{
+    console.log(e);
+    // mostrará el evento nativo
+    console.log(e.nativeEvent)
+    console.log(e.target)
+    console.log(e.nativeEvent.target)
+    console.log(message)
+  }
+  render(){
+    return(
+      <div>
+        <h2>Más sobre Eventos</h2>
+        {/* paso de Parametros usando el manejador de eventos */}
+        <button onClick={(e)=>this.handleClick(e,"Hola pasando parametro desde un evento")}>Click me</button>
+        {/* el evento no funcionará porque no es un elemento JSX */}
+        <Boton onClick={(e)=>this.handleClick(e,"Hola pasando parametro desde un evento")}></Boton>
+        {/* para que funcione tendremos que realizar Evento Personalizado */}
+        <Boton myOnClick={(e)=>this.handleClick(e,"Hola pasando parametro desde un evento")}></Boton>
+      </div>
+    )
+  }
+}
