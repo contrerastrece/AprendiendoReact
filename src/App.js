@@ -8,6 +8,7 @@ import Estado from "./components/Estado";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
 import {EventosES6, EventosES7,MasSobreEventos} from "./components/Eventos";
+import ComunicacionComponentes from "./components/ComunicacionComponentes"
 
 function App() {
   let nombre="VContreras";
@@ -61,6 +62,8 @@ function App() {
       <EventosES6></EventosES6>
       <EventosES7></EventosES7>
       <MasSobreEventos></MasSobreEventos>
+      <hr></hr>
+      <ComunicacionComponentes></ComunicacionComponentes>
     </div>
   );
 }
