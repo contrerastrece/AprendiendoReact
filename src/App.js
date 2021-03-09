@@ -10,6 +10,7 @@ import RenderizadoElementos from "./components/RenderizadoElementos";
 import {EventosES6, EventosES7,MasSobreEventos} from "./components/Eventos";
 import ComunicacionComponentes from "./components/ComunicacionComponentes";
 import CicloVida from "./components/CicloVida";
+import AjaxApi from "./components/AjaxApis";
 
 function App() {
   let nombre="VContreras";
@@ -67,6 +68,8 @@ function App() {
       <ComunicacionComponentes></ComunicacionComponentes>
       <hr></hr>
       <CicloVida></CicloVida>
+      <hr></hr>
+      <AjaxApi></AjaxApi>
     </div>
   );
 }
