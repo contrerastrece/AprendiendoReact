@@ -11,6 +11,7 @@ import {EventosES6, EventosES7,MasSobreEventos} from "./components/Eventos";
 import ComunicacionComponentes from "./components/ComunicacionComponentes";
 import CicloVida from "./components/CicloVida";
 import AjaxApi from "./components/AjaxApis";
+import ContadorHooks from "./components/ContadorHooks";
 
 function App() {
   let nombre="VContreras";
@@ -70,6 +71,8 @@ function App() {
       <CicloVida></CicloVida>
       <hr></hr>
       <AjaxApi></AjaxApi>
+      <hr></hr>
+      <ContadorHooks></ContadorHooks>
     </div>
   );
 }
