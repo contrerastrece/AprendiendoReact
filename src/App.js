@@ -13,6 +13,7 @@ import CicloVida from "./components/CicloVida";
 import AjaxApi from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
 import ScroollHooks from "./components/ScroolHooks";
+import RelojHooks from "./components/RelojHooks";
 
 function App() {
   let nombre="VContreras";
@@ -76,6 +77,8 @@ function App() {
       <ContadorHooks></ContadorHooks>
       <hr></hr>
       <ScroollHooks></ScroollHooks>
+      <hr></hr>
+      <RelojHooks></RelojHooks>
     </div>
   );
 }
