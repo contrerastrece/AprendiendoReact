@@ -12,6 +12,7 @@ import ComunicacionComponentes from "./components/ComunicacionComponentes";
 import CicloVida from "./components/CicloVida";
 import AjaxApi from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
+import ScroollHooks from "./components/ScroolHooks";
 
 function App() {
   let nombre="VContreras";
@@ -73,6 +74,8 @@ function App() {
       <AjaxApi></AjaxApi>
       <hr></hr>
       <ContadorHooks></ContadorHooks>
+      <hr></hr>
+      <ScroollHooks></ScroollHooks>
     </div>
   );
 }
