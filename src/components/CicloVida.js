@@ -8,7 +8,7 @@ class Reloj extends Component {
   // Lo utilizaremos para eleminiar el componente Reloj
   // al renderizar se eliminará del DOM
   componentWillUnmount() {
-    console.log(3, "El componente RELOJ ha sido eliminado del DOM");
+    // console.log(3, "El componente RELOJ ha sido eliminado del DOM");
   }
 
   render() {
@@ -20,7 +20,7 @@ class Reloj extends Component {
 export default class CicloVida extends Component {
   constructor(props) {
     super(props);
-    console.log(0, "El componente se Inicializa, aún no está en el DOM");
+    // console.log(0, "El componente se Inicializa, aún no está en el DOM");
 
     this.state = {
       hora: new Date().toLocaleTimeString(),
@@ -34,17 +34,17 @@ export default class CicloVida extends Component {
   //  la salida del componente ha sido renderizada en el DOM.
   //  Este es un buen lugar para configurar un temporizador:
   componentDidMount() {
-    console.log(1, "El estado o la props del componente han cambiado");
+    // console.log(1, "El estado o la props del componente han cambiado");
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(2, "El componente se está renderizando")
+    // console.log(2, "El componente se está renderizando")
     console.log(prevProps);
     console.log(prevState);//devolverá el estado anterior
   }
 
   componentWillUnmount() {
-    console.log(3, "Se ejecutará cuando el componente se elimina")
+    // console.log(3, "Se ejecutará cuando el componente se elimina")
   }
   tictac = (e) => {
     this.temporizador = setInterval(() => {
@@ -61,7 +61,7 @@ export default class CicloVida extends Component {
   };
 
   render() {
-    console.log(4, "El componente se redibuja por algún cambio en el DOM")
+    // console.log(4, "El componente se redibuja por algún cambio en el DOM")
     return (
       <div>
         <h2>Ciclo de Vida de los componentes de clase</h2>

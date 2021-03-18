@@ -11,7 +11,7 @@ export default function ScrollHooks(){
 // se recomienda pasar la dependecia de la variable que sufrirá cambio
 // para anuestro caso sería  [scrollY]
   useEffect(() =>{
-    console.log("Moviendo el Scroll Y");
+    // console.log("Moviendo el Scroll Y");
     const detectarScroll=()=>{
       setScrollY(window.pageYOffset);
     }
@@ -23,16 +23,16 @@ export default function ScrollHooks(){
   },[scrollY])
   // componentDidMount
   useEffect(()=>{
-    console.log("**** Fase de Montaje ****")
+    // console.log("**** Fase de Montaje ****")
   },[])
   // componentDidUpdate
   useEffect(()=>{
-    console.log("**** fase de Actualización ****")
+    // console.log("**** fase de Actualización ****")
   })
   // componentWillUnmount
   useEffect(()=>{
     return ()=>{
-      console.log("**** fase de Desmontaje ****");
+      // console.log("**** fase de Desmontaje ****");
     }
   })
   

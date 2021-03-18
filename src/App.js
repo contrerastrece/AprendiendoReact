@@ -14,6 +14,7 @@ import AjaxApi from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
 import ScroollHooks from "./components/ScroolHooks";
 import RelojHooks from "./components/RelojHooks";
+import AjaxHooks from "./components/AjaxHooks";
 
 function App() {
   let nombre="VContreras";
@@ -79,6 +80,8 @@ function App() {
       <ScroollHooks></ScroollHooks>
       <hr></hr>
       <RelojHooks></RelojHooks>
+      <hr></hr>
+      <AjaxHooks></AjaxHooks>
     </div>
   );
 }
