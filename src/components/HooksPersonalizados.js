@@ -2,9 +2,9 @@ import React from "react";
 import { useFetch } from "../hooks/useFetch";
 
 export default function HooksPersonalizados() {
-  console.log(useFetch());
   let url = "https://pokeapi.co/api/v2/pokemon/";
   let { data, isPending, error } = useFetch(url);
+  // console.log(useFetch());
   return (
     <>
       <h2>Hooks Personalizados</h2>

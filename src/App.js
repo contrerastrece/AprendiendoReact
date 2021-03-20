@@ -16,6 +16,7 @@ import ScroollHooks from "./components/ScroolHooks";
 import RelojHooks from "./components/RelojHooks";
 import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from './components/HooksPersonalizados';
+import Referencias from './components/Referencias';
 
 function App() {
   let nombre="VContreras";
@@ -85,6 +86,8 @@ function App() {
       <AjaxHooks></AjaxHooks>
       <hr></hr>
       <HooksPersonalizados></HooksPersonalizados>
+      <hr></hr>
+      <Referencias></Referencias>
     </div>
   );
 }
