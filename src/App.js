@@ -18,6 +18,7 @@ import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from './components/HooksPersonalizados';
 import Referencias from './components/Referencias';
 import Formularios from './components/Fromularios';
+import Estilos from './components/Estilos';
 
 function App() {
   let nombre="VContreras";
@@ -91,6 +92,9 @@ function App() {
       <Referencias></Referencias>
       <hr></hr>
       <Formularios></Formularios>
+      <hr></hr>
+      <Estilos></Estilos>
+
     </div>
   );
 }
