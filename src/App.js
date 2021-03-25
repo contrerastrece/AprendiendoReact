@@ -19,6 +19,7 @@ import HooksPersonalizados from './components/HooksPersonalizados';
 import Referencias from './components/Referencias';
 import Formularios from './components/Fromularios';
 import Estilos from './components/Estilos';
+import ComponenteEstilizado from './components/ComponentesEstilizados';
 
 function App() {
   let nombre="VContreras";
@@ -94,6 +95,8 @@ function App() {
       <Formularios></Formularios>
       <hr></hr>
       <Estilos></Estilos>
+      <hr></hr>
+      <ComponenteEstilizado></ComponenteEstilizado>
 
     </div>
   );
